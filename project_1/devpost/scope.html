@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quit-Smoking Support · Scope Review</title>
+<style>
+:root{color-scheme:light;--ink:#193d34;--muted:#536b63;--paper:#f5f7f0;--line:#cddbd0;--green:#20654d}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 system-ui,sans-serif}main{max-width:1040px;margin:auto;padding:48px 24px 70px}header{background:#e2eddf;border:1px solid var(--line);border-radius:24px;padding:36px}small,.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;font-weight:700}h1{font-size:clamp(32px,5vw,52px);line-height:1.12;max-width:750px;margin:16px 0}h2{font-size:25px;margin:0 0 14px}p{margin:10px 0}a{color:var(--green)}.lede{max-width:700px;color:var(--muted);font-size:19px}.tag{display:inline-block;border:1px solid #9bb4a2;border-radius:99px;padding:3px 12px;font-size:13px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:24px 0}.card,.diagram,details{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}.diagram{margin:24px 0}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;list-style:none;padding:0;counter-reset:step}.flow li{position:relative;background:#eef4eb;border-radius:12px;padding:18px;counter-increment:step}.flow li:before{content:counter(step);display:block;font-weight:800;color:var(--green);font-size:23px}.flow strong{display:block}.proof{border-left:4px solid var(--green);padding-left:18px}.muted{color:var(--muted)}.bands{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}.band{padding:10px 14px;border-radius:10px;font-weight:650}.green{background:#dceedd}.yellow{background:#fff0bd;color:#654c0b}.red{background:#ffe0d0;color:#7b3424}details{margin:12px 0}summary{cursor:pointer;font-weight:750;font-size:20px}summary:focus-visible,a:focus-visible{outline:3px solid #317b65;outline-offset:5px}li{margin:6px 0}footer{margin-top:28px;font-size:14px;color:var(--muted)}@media(max-width:700px){main{padding:22px 16px 40px}header{padding:24px}.grid,.flow{grid-template-columns:1fr}.card,.diagram,details{padding:20px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<span class="eyebrow">Build With AI · Scope review</span>
+<h1>Small steps toward a smoke-free day.</h1>
+<p class="lede">A calm web app that pairs daily cigarette tracking with practical craving support—and celebrates completing a helpful alternative.</p>
+<p><span class="tag">Approved · ready for product definition</span></p>
+<p><a href="scope.md">Read the canonical Markdown scope</a></p>
+</header>
+<div class="grid">
+<section class="card"><h2>Who this helps</h2><p>A smoker trying to quit through manageable changes, who needs accessible tools and alternatives during the day—including at a work desk.</p></section>
+<section class="card"><h2>What makes it useful</h2><p>The count leads to an action: as someone approaches their limit, the app brings forward friendly support and a brief alternative activity.</p></section>
+</div>
+<section class="diagram" aria-labelledby="flow-title">
+<h2 id="flow-title">The core loop</h2>
+<p class="muted">For someone taking gradual steps toward quitting:</p>
+<ol class="flow" aria-label="User journey from setting a limit to completing an activity">
+<li><strong>Set &amp; log</strong>Choose a daily limit and record cigarettes.</li>
+<li><strong>See &amp; respond</strong>Check the count; craving support comes forward at 10 and above.</li>
+<li><strong>Try an alternative</strong>Follow a short breathing, stretching, yoga, or walking activity.</li>
+<li><strong>Complete &amp; celebrate</strong>Tap “I did it” for encouragement and confetti. Return throughout the day.</li>
+</ol>
+<p class="proof"><strong>Proof in the demo:</strong> logging updates the circle, the support appears, and completing an activity triggers the celebration.</p>
+</section>
+<section class="card">
+<h2>The agreed example: a daily limit of 15</h2>
+<p>Show an explicit label such as <strong>“10 of 15 today”</strong> so a filling circle is understood as a cigarette count.</p>
+<div class="bands" aria-label="Count color thresholds"><span class="band green">0–9 · Green</span><span class="band yellow">10–15 · Yellow</span><span class="band red">Above 15 · Orange/red</span></div>
+<p>At 10 and above, bring forward friendly craving support. After an activity is marked complete: <strong>“Great work—you’re on your way!”</strong> and a short confetti animation.</p>
+</section>
+<section aria-label="Scope boundaries" style="margin-top:28px">
+<h2>What belongs in this experiment</h2>
+<details open><summary>Now · the working proof of concept</summary><ul><li>User-chosen daily limit, cigarette logging, and a labeled colored circle.</li><li>Friendly craving support and a small set of guided workplace-friendly activities.</li><li>An “I did it” completion action, encouragement, and short confetti animation.</li><li>Clean modern styling, nature and fresh-air imagery, and a motivational tone.</li><li>A build that can be demonstrated in a short video and shared in a public GitHub repository. Deployment remains a learning goal; hosting is chosen during technical planning.</li></ul></details>
+<details><summary>Later · useful extensions</summary><ul><li>Money-saved calculations.</li><li>Researched and sourced information about quitting products, including the originally mentioned pouches, gum, and patches.</li><li>A broader health information library.</li><li>A more extensive quit plan and broader healthy-lifestyle features.</li></ul></details>
+<details><summary>Cut · no permanent exclusions</summary><p>No additional features were permanently rejected. The larger ideas are deferred so this first experiment stays manageable.</p></details>
+</section>
+<div class="grid">
+<section class="card"><h2>Look &amp; feel</h2><p>Clean, easy to use, modern, and encouraging, with nature and fresh-air imagery. Welcome another attempt and emphasize small steps. Final tagline and project name remain open.</p></section>
+<section class="card"><h2>Details for the PRD</h2><p>Daily reset, saved data, accidental-log corrections, and how thresholds work for limits other than 15. The next planning step defines these behaviors.</p></section>
+</div>
+<footer>This is a planning companion, not the app. Markdown remains canonical. The demonstration proves the interaction, not a health outcome. This page works offline without external dependencies.</footer>
+</main>
+</body>
+</html>
